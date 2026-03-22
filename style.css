@@ -1,0 +1,351 @@
+html {
+	font-family: "EB Garamond", serif;
+}
+html {
+	background-color: #f6f5f2;
+}
+
+.FIRST {
+	display: flex;
+	align-items: center; /* Centers items vertically */
+	justify-content: space-between; /* Pushes content to the edges */
+	padding: 50px 10%; /* Adds breathing room on the sides */
+	min-height: 80vh;
+	gap: 40px; /* Space between the text and the image */
+}
+
+/* 2. The Text Side */
+.Two {
+	flex: 1; /* Takes up 50% of the space */
+}
+
+.Two h1 {
+	font-family: "Serif", Georgia, serif; /* Use a serif font for that look */
+	font-size: 4rem;
+	line-height: 1.1;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.Two p {
+	font-size: 1.1rem;
+	line-height: 1.6;
+	max-width: 500px; /* Keeps text from getting too wide */
+	margin-bottom: 30px;
+}
+
+/* 4. The Image Side */
+.First-IMG {
+	flex: 1; /* Takes up the other 50% */
+}
+
+.First-IMG {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* General section styling */
+.experience-section {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #2c3e50;
+	border: 1px solid #000; /* Border around the entire section */
+}
+
+/* 1. The Header Banner */
+.header-banner {
+	background-color: #e2f4b1; /* Light lime green color */
+	padding: 40px 60px;
+	border-bottom: 1px solid #000;
+}
+
+.header-banner h1 {
+	margin: 0;
+	font-size: 3.5rem;
+	font-weight: 400;
+}
+
+/* 2. The Grid Layout */
+.grid-container {
+	display: flex;
+	background-color: #fff;
+}
+
+.column {
+	flex: 1; /* Makes all 3 columns equal width */
+	padding: 40px;
+	min-height: 300px;
+}
+
+/* 3. The Vertical Dividers */
+.column:not(:first-child) {
+	border-left: 1px solid #000; /* Adds border only between columns */
+}
+
+/* 4. Text Styling inside Columns */
+.column h3 {
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+
+.column h4 {
+	font-size: 1.1rem;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.column p {
+	line-height: 1.6;
+	font-size: 1rem;
+	color: #34495e;
+}
+
+.education-container {
+	font-family: "Serif", Georgia, serif; /* Matches the academic look */
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	color: #000;
+}
+
+.main-title {
+	font-size: 5rem;
+	margin: 0;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+}
+
+.sub-title {
+	font-size: 1.5rem;
+	margin: 10px 0 30px 0;
+}
+
+/* The horizontal line under 'Academic Background' */
+.top-divider {
+	border: 0;
+	border-top: 1px solid #000;
+	margin: 0;
+}
+
+/* The container for the degrees */
+.degree-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.degree-item {
+	padding: 40px 0 40px 10%; /* Indents the text by 10% */
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	border-bottom: 1px solid #000; /* Creates the divider lines */
+	letter-spacing: 1px;
+}
+
+.achievements-section {
+	font-family: "Serif", Georgia, serif;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 60px 20px;
+	color: #000;
+}
+
+.main-title {
+	font-size: 4.5rem;
+	margin: 0;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+
+.sub-title {
+	font-size: 1.4rem;
+	margin: 10px 0 30px 0;
+	font-style: italic;
+	color: #555;
+}
+
+.top-divider {
+	border: 0;
+	border-top: 1px solid #000;
+	margin: 0;
+}
+
+/* List Styling */
+.achievement-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.achievement-item {
+	padding: 35px 0 35px 5%; /* Indent the whole block */
+	border-bottom: 1px solid #eee; /* Lighter line for individual items */
+}
+
+.item-header {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 8px;
+}
+
+.bullet {
+	font-size: 1.5rem;
+}
+
+.title {
+	font-size: 1.3rem;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+.details {
+	padding-left: 28px; /* Aligns description text under the title, skipping the bullet */
+	font-size: 1rem;
+	color: #666;
+	line-height: 1.5;
+	margin: 0;
+}
+
+/* Hover effect for interactivity */
+.achievement-item:hover {
+	background-color: #fcfcfc;
+}
+
+.skills-section {
+	font-family: "Segoe UI", sans-serif;
+	color: #1a2a3a;
+	border: 1px solid #1a2a3a; /* Outer border */
+}
+
+/* 1. Header Styling */
+.skills-header {
+	background-color: #e2f4b1; /* Match the light lime green */
+	padding: 30px 50px;
+	border-bottom: 1px solid #1a2a3a;
+}
+
+.skills-header h1 {
+	margin: 0;
+	font-size: 3.5rem;
+	font-weight: 500;
+}
+
+/* 2. Grid Styling */
+.skills-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Two equal columns */
+}
+
+.skill-item {
+	padding: 60px 50px;
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.skill-item:nth-child(odd) {
+	border-right: 1px solid #1a2a3a;
+}
+
+.skill-item:nth-child(-n + 2) {
+	border-bottom: 1px solid #1a2a3a;
+}
+
+.icon {
+	font-size: 2.2rem;
+}
+
+.contact-section {
+	margin: 0;
+	background-color: #3d3d3d; /* dark grey background for contact section.*/
+	font-family: "Inter", sans-serif;
+	color: white;
+}
+
+.contact-section {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 10%;
+	gap: 100px;
+}
+
+/* Left Side Style*/
+.contact-info {
+	flex: 1;
+}
+
+.contact-info h1 {
+	font-family: "Serif", Georgia, serif;
+	font-size: 4rem;
+	margin: 0 0 20px 0;
+}
+
+.contact-info p {
+	line-height: 1.6;
+	font-size: 1.1rem;
+}
+
+/* Right Side (Form) customize */
+.contact-form {
+	flex: 1.5;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.name-row {
+	display: flex;
+	gap: 20px;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.input-group label {
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+}
+
+/* The Underline Effect */
+input,
+textarea {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	color: white;
+	padding: 10px 0;
+	font-size: 1rem;
+	outline: none;
+}
+
+textarea {
+	resize: none;
+}
+
+/* Special case for Phone/Icon row */
+.phone-input-wrapper {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid white;
+}
+
+.phone-input-wrapper input {
+	border-bottom: none;
+	width: 100%;
+}
+
+/* Submit Button */
+.submit-btn {
+	background-color: white;
+	color: black;
+	border: none;
+	padding: 15px;
+	font-size: 1.1rem;
+	margin-top: 20px;
+	transition: opacity 0.2s;
+}
